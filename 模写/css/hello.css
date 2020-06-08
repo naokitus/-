@@ -1,0 +1,166 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ここまでリセットCSS */
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4vw;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    font-size: 1.5vw;
+}
+
+header img{
+    width: 2%;
+    margin-left: 3%;
+}
+
+.header-nav ul{
+    list-style: none;
+    width: 600px;
+    margin-right: 100px;
+}
+
+
+.header-nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav ul a{
+    text-decoration: none;
+    color: #292929;
+}
+
+/* ここまでがheader */
+.conts{
+    width: 100%;
+    height: 700px;
+    background-image: url("../photo/003.JPG");
+    background-size: cover;
+}
+
+.back-green{
+    height: 5px;
+    width: 100%;
+    background-color: #357944;
+}
+
+.conts-1{
+    width: 45%;
+    height: 330px;
+    position: relative;
+    top: 300px;
+    left: 52%;
+    background-color: rgb(255, 255, 255, .7);
+}
+
+.conts-1 p{
+    font-size: 4vw;
+    padding-top: 6%;
+    line-height: 130%;
+    padding-left: 5%;
+}
+
+.conts-1 h1{
+    font-size: 2.1vw;
+    padding-top: 3%;
+    padding-left: 5%;
+    font-weight: 60;
+    line-height: 60px;
+}
