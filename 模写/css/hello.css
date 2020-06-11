@@ -98,7 +98,7 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 4vw;
+    height: 45px;
     align-items: center;
     background-color: white;
     position: fixed;
@@ -106,7 +106,7 @@ header{
 }
 
 header img{
-    width: 2%;
+    width: 30px;
     margin-left: 3%;
 }
 
@@ -163,7 +163,8 @@ header img{
     padding-top: 3%;
     padding-left: 5%;
     font-weight: 60;
-    line-height: 60px;
+    line-height: 150%;
+    padding-bottom: 3%;
 }
 
 /* ここまでで一区切り */
@@ -171,7 +172,6 @@ header img{
 .about-conts{
     width: 100%;
     text-align: center;
-    height: 100px;
 }
 
 .about-conts>h2{
@@ -189,8 +189,13 @@ header img{
     margin-top: 30px;
     margin-left: 5%;
     width: 90%;
-    height: auto;
     border: 1px solid black;
+    text-align: left;
+}
+
+.about-conts-111{
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-conts-in-top{
@@ -203,14 +208,13 @@ header img{
     width: 30%;
     height: 300px;
     margin-top: 15%;
-    position: absolute;
-    left: 8%;
+    margin-bottom: 30px;
+    margin-left: 4%;
 }
 
 .about-right{
     width: 55%;
-    height: 80%;
-    margin-left: 42%;
+    margin-right: 3%;
     margin-top: 5%;
 }
 
@@ -265,3 +269,164 @@ header img{
     width: 100%;
     text-align: center;
 }
+
+.news-conts h2{
+    padding-top: 100px;
+    font-size: 30px;
+}
+
+.news-conts>p{
+    font-size: 22px;
+    color: #357944;
+    padding-top: 10px;
+}
+
+.news-conts ul{
+    text-align: left;
+    margin-top: 50px;
+    list-style: none;
+    width: 88%;
+    padding-left: 3%;
+    height: 15vw;
+    overflow-y: scroll;
+}
+
+.news-conts li{
+    border-bottom: 1px solid #292929;
+    width: 88%;
+    height: 3vw;
+    margin-left: 5%;
+}
+
+.news-conts ul li p{
+    display: inline-block;
+    font-size: 1.6vw;
+    margin-left: 3%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.news-day{
+    margin-right: 1.25%;
+}
+
+/* ここまでで一区切り */
+
+.partner-conts{
+    width: 100%;
+    text-align: center;
+}
+
+.partner-conts h2{
+    padding-top: 100px;
+    font-size: 30px;
+}
+
+.partner-conts>p{
+    font-size: 22px;
+    color: #357944;
+    margin-top: 10px;
+}
+
+.partner-box{
+    padding-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.partner-box-1{
+    margin-top: 40px;
+    width: 18%;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-name{
+    color: black;
+    font-size: 2vw;
+}
+
+.partner-main{
+    width: 70%;
+    height: 30vw;
+    margin-left: 15%;
+    margin-top: 50px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 800;
+        top: 2px;
+        right: 10px;
+        transition: .2s;
+    }
+
+    .hamburger span{
+        position: absolute;
+        left: 2px;
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: black;
+        transition: .4;
+    }
+
+    .hamburger span:nth-of-type(1){
+        top: 10px;
+    }
+
+    .hamburger span:nth-of-type(2){
+        top: 20px;
+    }
+
+    .hamburger span:nth-of-type(3){
+        top: 30px;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .conts-1{
+        position: relative;
+        top: 70%;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
+    .about-conts-111{
+        display: block;
+        text-align: center;
+    }
+
+    .about-left-photo{
+        width: 80%;
+        margin-left: 0%;
+    }
+
+    .about-right{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+
+    .partner-box{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .partner-box-1{
+        width: 40%;
+    }
+}
+
